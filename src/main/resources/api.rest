@@ -1,0 +1,70 @@
+@url_user = http://localhost:8080/users
+
+GET {{url_user}} HTTP/1.1
+###
+GET {{url_user}}/1 HTTP/1.1
+###
+POST {{url_user}} HTTP/1.1
+content-type: application/json
+
+{
+    "cpf": "23152165",
+    "name": "Maria Brown",
+    "email": "maria@gmail.com",
+    "password": "23152165"
+}
+###
+PUT {{url_user}}/1 HTTP/1.1
+content-type: application/json
+
+{
+    "cpf": "23152165",
+    "name": "Pedro Brown",
+    "email": "pedro@gmail.com",
+    "password": "23152165"
+}
+###
+DELETE {{url_user}}/1 HTTP/1.1
+###
+
+@url_fuel_history = http://localhost:8080/fuel_history
+
+GET {{url_fuel_history}} HTTP/1.1
+###
+GET {{url_fuel_history}}/1 HTTP/1.1
+###
+POST {{url_fuel_history}} HTTP/1.1
+content-type: application/json
+
+{
+    "region":"CO",
+    "state":"DF",
+    "municipality":"BRASILIA",
+    "resale":"ABRITTA POSTOS DE SERVIÇOS LTDA",
+    "cnpj":"10668863000195",
+    "product":"DIESEL",
+    "collectionData":"2019-01-16",
+    "saleValue":3.799,
+    "purchaseValue":3.2166,
+    "unitMeasure":"R$ / litro",
+    "flag":"RAIZEN"
+}
+###
+PUT {{url_fuel_history}}/1 HTTP/1.1
+content-type: application/json
+
+{
+    "region":"NE",
+    "state":"PB",
+    "municipality":"JOAO PESSOA",
+    "resale":"ABRITTA POSTOS DE SERVIÇOS LTDA",
+    "cnpj":"10668863000195",
+    "product":"GASOLINA",
+    "collectionData":"2019-01-16",
+    "saleValue":3.799,
+    "purchaseValue":3.2166,
+    "unitMeasure":"R$ / litro",
+    "flag":"RAIZEN"
+}
+###
+DELETE {{url_fuel_history}}/1 HTTP/1.1

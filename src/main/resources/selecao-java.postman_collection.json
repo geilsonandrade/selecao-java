@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "6deab426-39f9-49b4-994a-cb2bb5451a9e",
+		"name": "selecao-java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cpf\": \"23152165\",\n    \"name\": \"Maria Brown\",\n    \"email\": \"maria@gmail.com\",\n    \"password\": \"23152165\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cpf\": \"1566516\",\n    \"name\": \"Pedro Carlos\",\n    \"email\": \"pedro@gmail.com\",\n    \"password\": \"5415313\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cpf\": \"1566516\",\n    \"name\": \"Pedro Carlos\",\n    \"email\": \"pedro@gmail.com\",\n    \"password\": \"5415313\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "FuelHistory",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"region\":\"CO\",\n    \"state\":\"DF\",\n    \"municipality\":\"BRASILIA\",\n    \"resale\":\"ABRITTA POSTOS DE SERVIÇOS LTDA\",\n    \"cnpj\":\"10668863000195\",\n    \"product\":\"DIESEL\",\n    \"collectionData\":\"2019-01-16\",\n    \"saleValue\":3.799,\n    \"purchaseValue\":3.2166,\n    \"unitMeasure\":\"R$ / litro\",\n    \"flag\":\"RAIZEN\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/fuel_history",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fuel_history"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/fuel_history",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fuel_history"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/fuel_history/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fuel_history",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"region\":\"TESTE\",\n    \"state\":\"TESTE\",\n    \"municipality\":\"TESTE\",\n    \"resale\":\"ABRITTA POSTOS DE SERVIÇOS LTDA\",\n    \"cnpj\":\"10668863000195\",\n    \"product\":\"DIESEL\",\n    \"collectionData\":\"2019-01-16\",\n    \"saleValue\":3.799,\n    \"purchaseValue\":3.2166,\n    \"unitMeasure\":\"R$ / litro\",\n    \"flag\":\"RAIZEN\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/fuel_history/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fuel_history",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cpf\": \"1566516\",\n    \"name\": \"Pedro Carlos\",\n    \"email\": \"pedro@gmail.com\",\n    \"password\": \"5415313\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/fuel_history/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fuel_history",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
